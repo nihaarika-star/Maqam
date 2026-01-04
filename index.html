@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>MAQAM - Bringing the Middle East to the world</title>
     <style>
         * {
@@ -21,7 +21,16 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
             display: block;
+        }
+        
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            .fullscreen-image {
+                object-fit: contain;
+                background-color: #e8e4dc;
+            }
         }
     </style>
 </head>
