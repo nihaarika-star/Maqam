@@ -117,12 +117,13 @@
         
         /* Decorative pattern at bottom - full width */
         .pattern-wrapper {
-            width: 100vw;
+            width: 100%;
             height: 25vh;
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
+            padding: 0 6rem 4rem;
         }
         
         .pattern {
@@ -131,7 +132,7 @@
             background-image: url('maqam-slide.jpg');
             background-size: cover;
             background-position: center top;
-            border-radius: 40px 40px 0 0;
+            border-radius: 40px;
         }
         
         /* Tablet styles */
@@ -150,6 +151,7 @@
             
             .pattern-wrapper {
                 height: 22vh;
+                padding: 0 4rem 3rem;
             }
         }
         
@@ -208,12 +210,15 @@
                 position: relative;
                 height: 30vh;
                 min-height: 200px;
-                width: 100vw;
+                width: 100%;
                 margin-left: 0;
+                padding: 0 1.5rem 2rem;
             }
             
             .pattern {
-                border-radius: 30px 30px 0 0;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 30px;
             }
         }
         
@@ -238,10 +243,11 @@
             .pattern-wrapper {
                 height: 200px;
                 margin-left: 0;
+                padding: 0 1rem 1.5rem;
             }
             
             .pattern {
-                border-radius: 20px 20px 0 0;
+                border-radius: 20px;
             }
         }
     </style>
